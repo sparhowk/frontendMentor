@@ -10,25 +10,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-/* Atributess */
-.attribution {
-    font-size: 11px;
-    position: fixed;
-    text-align: center;
-    margin-top: 0px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
+
 
 body {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display';
     background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: var(--very-pale-blue);
-    font-size: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,17 +30,88 @@ body {
     min-height: 100vh;
 }
 
+/* Atributess */
+.attribution {
+    font-size: 11px;
+    position: fixed;
+    text-align: center;
+    margin: 25px 80px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 .container {
     background-color: white;
     width: 450px;
-    border-radius: 20px ;
-
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-.hero{
-    border-radius: 20px 20px 0 0 ;
+.hero {
+    border-radius: 20px 20px 0 0;
+}
+
+h2.title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
 }
 
 .box-payment {
     display: flex;
+}
+
+p.description {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 0 45px;
+    color: var(--desaturated-blue);
+    line-height: 1.5;
+}
+
+.price {
+    margin: 30px auto;
+    padding: 30px 20px;
+    background-color: var(--very-pale-blue);
+    width: 75%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price article {
+    display: flex;
+    align-items: center;
+}
+
+.price article img {
+    margin-right: 20px;
+}
+
+.change {
+    color: var(--bright-blue);
+}
+
+.change:hover {
+    opacity: 80%;
+    text-decoration: none;
+}
+
+.box-payment {
+    margin: 20px 45px 20px 45px;
+    padding: 25px;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+
+}
+
+.box-payment article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
